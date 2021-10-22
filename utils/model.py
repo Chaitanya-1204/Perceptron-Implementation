@@ -1,3 +1,5 @@
+import numpy as np
+
 class Perceptron:
   def __init__(self , eta , epochs): # eta = learning_rate 
     self.weights = np.random.randn(3) * 1e-4 # Small weight initialization
