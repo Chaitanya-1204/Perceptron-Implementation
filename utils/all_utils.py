@@ -8,6 +8,18 @@ from matplotlib.colors import ListedColormap
 plt.style.use("fivethirtyeight")
 
 def prepare_data(df):
+
+  '''
+    it is used to separate dependent and independent variable 
+
+    Args:
+      df(pd.DataFrame) : it is pandas dataFrame
+
+    Return:
+      tuple : return a tuple of dependent and independent variable
+  
+  
+  '''
   X = df.drop("Y" , axis  = 1)
   Y = df["Y"]
 
