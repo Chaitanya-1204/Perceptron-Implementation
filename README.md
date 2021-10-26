@@ -71,7 +71,7 @@ Dataset are
 
 #### 3. XOR
 
-![Perceptron](https://miro.medium.com/max/799/1*_Epn1FopggsgvwgyDA4o8w.png)
+
 
 
 
