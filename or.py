@@ -2,6 +2,10 @@ from utils.model import Perceptron
 from utils.all_utils import prepare_data , save_model , save_plot 
 import pandas as pd
 import numpy as np 
+import logging
+
+logging_str = "[%(asctime)s : %(levelname)s : %(module)s ] %(message)s"
+logging.basicConfig(level=logging.INFO, format=logging_str)
 
 OR = {
     "x1" : [0  , 0 ,  1 , 1 ],
@@ -9,7 +13,7 @@ OR = {
     "Y" : [0 , 1 , 1 , 1]
 }
 or_df = pd.DataFrame(OR)
-print(or_df)
+logging.info(f"This Is actual Data Frame \n: {or_df}")
 
 X , Y = prepare_data(or_df)
 
