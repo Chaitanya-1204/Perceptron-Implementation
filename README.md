@@ -7,7 +7,7 @@ This repository contains implementation of a Perceptron which is simmply a singl
 
 Forward Pass of Perceptron 
 
-    $z = w_1x_1 + w_2x_2 + w_3x_3 + b$
+    z = w_1 * x_1 + w_2 * x_2 + w_3 * x_3 + b
 
 After the Forward Pass of Perceptron activation Function i.e Step function is implemented
 
