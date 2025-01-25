@@ -47,7 +47,7 @@ class Perceptron:
     def predict(self, X):
         
         X_with_bias = np.c_[X , -np.ones((len(X) , 1))]
-        return self.activation_function(X_with_bias , self.weigths)
+        return self.activation_function(X_with_bias , self.weights)
     
     def total_loss(self):
         total_loss = np.sum(self.error)
